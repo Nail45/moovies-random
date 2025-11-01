@@ -1,0 +1,166 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.film-table th, .film-table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.film-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.action-td {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.form-delete {
+    padding: 0;
+    margin-top: 0;
+    color: white;
+
+    input {
+        background-color: red;
+        color: white;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Выравнивание и оформление заголовков формы */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    form input {
+        font-size: 16px;
+    }
+
+    .film-table thead {
+        display: none;
+    }
+
+    .film-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .film-table tbody td {
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .film-table tbody td::before {
+        content: attr(data-th);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .film-table tbody td[data-th]:first-of-type {
+        display: none;
+    }
+
+    .film-table tbody td:last-child {
+        justify-self: end;
+    }
+
+    .film-table tbody td:last-child a {
+        margin-right: 5px;
+    }
+}
+
+.back {
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.exit-wrap {
+    text-align: right;
+
+    a {
+        text-decoration: none;
+    }
+}

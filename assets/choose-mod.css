@@ -1,0 +1,41 @@
+.mode-selection {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Заголовок внутри блока */
+.mode-selection h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стиль для кнопок */
+.mode-selection a {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.mode-selection a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
