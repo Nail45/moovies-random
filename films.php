@@ -12,6 +12,7 @@ if (!empty($_POST['genre'])) {
         $film = $stmt->fetch(PDO::FETCH_ASSOC);
 
         $_SESSION['film'] = $film;
+        $_SESSION['genre'] = $_POST['genre'];
 
         header('Location: /');
     } catch (PDOException $e) {

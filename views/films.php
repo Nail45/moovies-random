@@ -15,11 +15,26 @@
     <form class="filter" method="post">
         <label for="genre"></label>
         <select id="genre" name="genre">
-            <option value="Комедия">Комедия</option>
-            <option value="Боевик">Боевик</option>
-            <option value="Драма">Драма</option>
-            <option value="Ужасы">Ужасы</option>
-            <option value="Фантастика">Фантастика</option>
+            <option value="Комедия" <?php if ($_SESSION['genre'] === 'Комедия') {
+                echo 'selected';
+            } ?>>Комедия
+            </option>
+            <option value="Боевик" <?php if ($_SESSION['genre'] === 'Боевик') {
+                echo 'selected';
+            } ?>>Боевик
+            </option>
+            <option value="Драма" <?php if ($_SESSION['genre'] === 'Драма') {
+                echo 'selected';
+            } ?>>Драма
+            </option>
+            <option value="Ужасы" <?php if ($_SESSION['genre'] === 'Ужасы') {
+                echo 'selected';
+            } ?>>Ужасы
+            </option>
+            <option value="Фантастика" <?php if ($_SESSION['genre'] === 'Фантастика') {
+                echo 'selected';
+            } ?>>Фантастика
+            </option>
         </select>
         <button type="submit" id="getMovieBtn">Показать случайный фильм</button>
     </form>
