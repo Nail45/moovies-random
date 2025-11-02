@@ -39,7 +39,7 @@
         <button type="submit" id="getMovieBtn">Показать случайный фильм</button>
     </form>
     <div class="result" id="result">
-        <a href="/<?php echo $_SESSION['film']['link'] ?>"><?php echo $_SESSION['film']['title'] ?></a>
+        <a target="_blank" href="<?php echo $_SESSION['film']['link'] ?>"><?php echo $_SESSION['film']['title'] ?></a>
     </div>
 </div>
 </body>
